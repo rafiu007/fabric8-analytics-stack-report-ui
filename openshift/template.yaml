@@ -109,4 +109,4 @@ parameters:
   displayName: Number of deployment replicas
   required: true
   name: REPLICAS
-  value: "3"
+  value: "6"
