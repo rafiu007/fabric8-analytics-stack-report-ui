@@ -37,7 +37,7 @@ class OverviewCard extends React.Component {
           </TextContent>
         </CardTitle>
         <CardBody>
-          <Tabs activeKey={0}>
+          <Tabs activeKey={1}>
             <Tab
               onSelect={() => {
                 console.log('hello');
@@ -53,8 +53,7 @@ class OverviewCard extends React.Component {
               }
             >
               <br />
-              <AddonsTable />
-              <SelectableDataList />
+              <OverviewContent />
             </Tab>
             <Tab
               eventKey={1}
@@ -68,6 +67,7 @@ class OverviewCard extends React.Component {
               }
             >
               <AddonsTable />
+              <SelectableDataList />
             </Tab>
           </Tabs>
         </CardBody>
