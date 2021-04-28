@@ -31,7 +31,7 @@ type DataListState = {
 // eslint-disable-next-line
 type DataProps = Record<any, any>;
 
-function SelectableDataList(props: any) {
+function SelectableDataList(name: any, score: number) {
   const [isOpen1, setisOpen1] = useState(false);
   const [isOpen2, setisOpen2] = useState(false);
   const [selectedDataListItemId, setselectableDataListItemId] = useState('');
