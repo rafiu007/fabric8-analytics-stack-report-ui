@@ -3,7 +3,8 @@ import Context from '../../../store/context';
 
 const Data = () => {
   const data = useContext(Context);
-  console.log(data);
+  const str = JSON.stringify(data, null, 4);
+  console.log(str);
   console.log('heyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy');
   return <div>Rafiu</div>;
 };

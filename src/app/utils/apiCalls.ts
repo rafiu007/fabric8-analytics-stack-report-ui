@@ -1,12 +1,14 @@
 import axios from 'axios';
 import React, { useContext, useEffect } from 'react';
-import Context from '../store/context';
+
 import { stageApiKey, stageApiUrl, localDevURL } from './constants';
 import { Logger } from './logger';
 
-function GetStackDetails(requestId = 'ed16d5db91d64e8d8d0ea6d1ba6b727e') {
+function GetStackDetails(
+  globalDispatch: any,
+  requestId = 'ed16d5db91d64e8d8d0ea6d1ba6b727e',
+) {
   // @ts-ignore
-  const { globalState, globalDispatch } = useContext(Context);
   useEffect(() => {
     const url = `${stageApiUrl}/api/v2/stack-analyses/${requestId}?user_key=${stageApiKey}`;
     const config = {
@@ -19,7 +21,8 @@ function GetStackDetails(requestId = 'ed16d5db91d64e8d8d0ea6d1ba6b727e') {
       .get(devUrl)
       .then((res: { data: any }) => {
         globalDispatch({ type: 'APIData', data: res.data });
-        Logger.log(res.data);
+        console.log(res.data);
+        console.log('heeuyyyyybuddy');
       })
       .catch((err) => {
         Logger.log(err);
