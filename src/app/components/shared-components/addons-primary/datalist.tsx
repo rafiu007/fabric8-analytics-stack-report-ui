@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 
-import React, { useState } from 'react';
+import React, { useState, MouseEvent } from 'react';
 import {
   Button,
   Dropdown,
@@ -55,10 +55,9 @@ function SelectableDataList(props: any) {
           <DataListItemCells
             dataListCells={[
               <DataListCell key="primary content">
-                <span id="selectable-action-item1">
-                  Single actionable Primary content
+                <span onClick={showDrawer} aria-hidden="true">
+                  Companion dependency 1
                 </span>
-                <DrawerStack />
               </DataListCell>,
               <DataListCell key="secondary content">
                 <SingleLine />,
@@ -142,6 +141,11 @@ const SingleLine = () => {
       aria-label="Title"
     />
   );
+};
+
+const showDrawer = (e: MouseEvent) => {
+  e.preventDefault();
+  return <DrawerStack />;
 };
 
 export default SelectableDataList;
