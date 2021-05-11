@@ -146,11 +146,7 @@ const SingleLine = () => {
 const showDrawer = (e: MouseEvent) => {
   e.preventDefault();
   alert('I was clicked');
-  return (
-    <div>
-      <DrawerStack />
-    </div>
-  );
+  return <DrawerStack open />;
 };
 
 export default SelectableDataList;

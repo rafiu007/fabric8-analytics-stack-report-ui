@@ -14,8 +14,9 @@ import {
   Button,
 } from '@patternfly/react-core';
 
-function DrawerStack() {
-  const [isExpanded, setisExpanded] = useState(false);
+function DrawerStack(open: any) {
+  alert(open);
+  const [isExpanded, setisExpanded] = useState(true);
 
   const panelContent = (
     <DrawerPanelContent>
@@ -35,7 +36,6 @@ function DrawerStack() {
 
   return (
     <div>
-      <Button onClick={() => setisExpanded(!isExpanded)} />
       <Drawer isExpanded={isExpanded}>
         <DrawerContent panelContent={panelContent} />
       </Drawer>
