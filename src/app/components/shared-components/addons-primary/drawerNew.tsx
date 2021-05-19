@@ -7,6 +7,8 @@ import {
   DrawerHead,
   DrawerPanelBody,
   DrawerPanelContent,
+  Flex,
+  FlexItem,
   Grid,
   GridItem,
   Progress,
@@ -14,6 +16,9 @@ import {
   ProgressMeasureLocation,
   ProgressVariant,
   Button,
+  Split,
+  SplitItem,
+  Title,
   Text,
   TextVariants,
 } from "@patternfly/react-core";
@@ -84,6 +89,26 @@ const DrawerFC = () => {
       </DrawerHead>
       <DrawerPanelBody>
         <Grid hasGutter>
+          <GridItem span={6}>
+            <Flex key="2" direction={{ default: "column" }}>
+              <FlexItem spacer={{ default: "spacerNone" }}>
+                <Split>
+                  <SplitItem>
+                    Latest Version
+                    <div>3.11</div>
+                  </SplitItem>
+                </Split>
+              </FlexItem>
+              <FlexItem spacer={{ default: "spacerNone" }}>
+                <Split>
+                  <Title headingLevel="h6" size="md">
+                    Licence(s) used
+                    <div>Apache License,version2.0</div>
+                  </Title>
+                </Split>
+              </FlexItem>
+            </Flex>
+          </GridItem>
           <GridItem span={6}>
             <GithubStats
               contributors={25}
