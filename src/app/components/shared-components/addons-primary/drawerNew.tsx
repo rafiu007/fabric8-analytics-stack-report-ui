@@ -29,7 +29,6 @@ const DrawerFC = () => {
   const [Companion, setCompanion] = useState([]);
   useEffect(() => {
     const compaionDeps = utils.GetCompanionData(globalState.Companion);
-    console.log(compaionDeps);
     setCompanion(compaionDeps);
     // setCompanion(compaionDeps);
   }, [globalState]);
