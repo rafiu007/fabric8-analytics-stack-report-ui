@@ -22,7 +22,6 @@ import GithubStats from "./github_stats";
 import ComposableTableMisc from "./addonstable";
 import Context from "../../../store/context";
 
-
 const DrawerFC = () => {
   // @ts-ignore
   const { globalState, globalDispatch } = useContext(Context);
