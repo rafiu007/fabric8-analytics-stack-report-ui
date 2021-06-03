@@ -95,10 +95,10 @@ async function RegisterUser(
 }
 
 async function submitFeedback(data: any, feedback: boolean, name: string) {
-  const urlf = `${stageApiUrl}/api/v1/submit-feedback?user_key=${stageApiKey}`;
+  const urlFeedback = `${stageApiUrl}/api/v1/submit-feedback?user_key=${stageApiKey}`;
   axios({
     method: "post",
-    url: urlf,
+    url: urlFeedback,
     headers: { "Content-Type": "application/json" },
     data: {
       stack_id: localStorage.getItem("requestId"),

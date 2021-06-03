@@ -27,10 +27,10 @@ const TextTable = (data: string) => {
 };
 
 const ProgressBar = (data: number) => {
-  const title = String(data).concat("%");
+  const title = String(Math.ceil(data)).concat("%");
   return (
     <Progress
-      value={data}
+      value={Math.ceil(data)}
       title={title}
       size={ProgressSize.sm}
       measureLocation={ProgressMeasureLocation.none}
