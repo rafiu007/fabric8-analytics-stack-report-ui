@@ -39,6 +39,7 @@ const GithubStats = ({
         </FlexItem>
       </Flex>
       <Flex key="2" direction={{ default: "column" }}>
+      <span>{" "}</span>
         <FlexItem spacer={{ default: "spacerNone" }}>
           <Split hasGutter>
             <UserAltIcon className="icon-class" />
