@@ -38,7 +38,7 @@ const ProgressBar = (data: number) => {
   );
 };
 
-const FeedbackButtons = (data: any,name: string) => {
+const FeedbackButtons = (data: any, name: string) => {
   return (
     <div>
       <Button
