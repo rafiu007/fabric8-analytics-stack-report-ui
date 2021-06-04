@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 import React, { useContext, useEffect, useState } from "react";
 import {
+  Divider,
   Drawer,
   DrawerActions,
   DrawerCloseButton,
@@ -82,8 +83,8 @@ const DrawerFC = () => {
         </DrawerActions>
       </DrawerHead>
       <DrawerPanelBody>
-        <Grid hasGutter>
-          <GridItem span={6}>
+        <Flex>
+          <FlexItem>
             <Flex key="2" direction={{ default: "column" }}>
               <FlexItem spacer={{ default: "spacerNone" }}>
                 <Split>
@@ -102,17 +103,20 @@ const DrawerFC = () => {
                 </Split>
               </FlexItem>
             </Flex>
-          </GridItem>
-          <GridItem span={6}>
-            <GithubStats
-              contributors={Number(drawerData.github.contributors)}
-              dependentRepos={Number(drawerData.github.dependent_repos)}
-              usage={Number(drawerData.github.used_by.length)}
-              forks={Number(drawerData.github.forks_count)}
-              stars={Number(drawerData.github.stargazers_count)}
-            />
-          </GridItem>
-        </Grid>
+          </FlexItem>
+          <Divider isVertical/>
+          <FlexItem>
+            <Flex key="2" direction={{ default: "column" }}>
+              <GithubStats
+                contributors={Number(drawerData.github.contributors)}
+                dependentRepos={Number(drawerData.github.dependent_repos)}
+                usage={Number(drawerData.github.used_by.length)}
+                forks={Number(drawerData.github.forks_count)}
+                stars={Number(drawerData.github.stargazers_count)}
+              />
+            </Flex>
+          </FlexItem>
+        </Flex>
       </DrawerPanelBody>
     </DrawerPanelContent>
   );
