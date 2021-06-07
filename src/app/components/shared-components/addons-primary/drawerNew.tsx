@@ -105,7 +105,7 @@ const DrawerFC = () => {
             </Flex>
           </FlexItem>
           <Divider isVertical />
-          <FlexItem>
+          <FlexItem align={{ default: "alignRight" }}>
             <Flex key="2" direction={{ default: "column" }}>
               <GithubStats
                 contributors={Number(drawerData.github.contributors)}
