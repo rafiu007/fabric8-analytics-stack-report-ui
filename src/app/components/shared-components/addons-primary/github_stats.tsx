@@ -46,7 +46,7 @@ const GithubStats = ({
             <SplitItem>Contributors:</SplitItem>
             <SplitItem>
               <Title headingLevel="h6" size="md">
-                {contributors}
+                {Math.max(contributors, 0)}
               </Title>
             </SplitItem>
           </Split>
@@ -57,7 +57,7 @@ const GithubStats = ({
             <SplitItem>DependentRepos:</SplitItem>
             <SplitItem>
               <Title headingLevel="h6" size="md">
-                {dependentRepos}
+                {Math.max(dependentRepos, 0)}
               </Title>
             </SplitItem>
           </Split>
@@ -68,7 +68,7 @@ const GithubStats = ({
             <SplitItem>Usage:</SplitItem>
             <SplitItem>
               <Title headingLevel="h6" size="md">
-                {usage}
+                {Math.max(usage, 0)}
               </Title>
             </SplitItem>
           </Split>
@@ -79,7 +79,7 @@ const GithubStats = ({
             <SplitItem>Forks:</SplitItem>
             <SplitItem>
               <Title headingLevel="h6" size="md">
-                {forks}
+                {Math.max(forks, 0)}
               </Title>
             </SplitItem>
           </Split>
@@ -90,7 +90,7 @@ const GithubStats = ({
             <SplitItem>Stars:</SplitItem>
             <SplitItem>
               <Title headingLevel="h6" size="md">
-                {stars}
+                {Math.max(stars, 0)}
               </Title>
             </SplitItem>
           </Split>
