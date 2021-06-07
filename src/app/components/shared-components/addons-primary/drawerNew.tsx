@@ -104,7 +104,7 @@ const DrawerFC = () => {
               </FlexItem>
             </Flex>
           </FlexItem>
-          <Divider isVertical/>
+          <Divider isVertical />
           <FlexItem>
             <Flex key="2" direction={{ default: "column" }}>
               <GithubStats
