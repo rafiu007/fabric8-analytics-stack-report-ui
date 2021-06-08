@@ -34,7 +34,7 @@ const GithubStats = ({
     <div>
       <Flex key="1">
         <FlexItem>
-          <Title headingLevel="h6" size="md">
+          <Title className="fontCategory" headingLevel="h6" size="md">
             GitHub Stastistics
           </Title>
         </FlexItem>

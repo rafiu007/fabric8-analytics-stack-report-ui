@@ -89,10 +89,10 @@ const DrawerFC = () => {
             <Flex key="2" direction={{ default: "column" }}>
               <FlexItem spacer={{ default: "spacerNone" }}>
                 <Split>
-                  <SplitItem>
+                  <Title headingLevel="h6" size="md">
                     Latest Version
                     <div className="font">{drawerData.latest_version}</div>
-                  </SplitItem>
+                  </Title>
                 </Split>
               </FlexItem>
               <FlexItem spacer={{ default: "spacerNone" }}>
