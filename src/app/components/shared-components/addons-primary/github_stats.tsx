@@ -44,7 +44,7 @@ const GithubStats = ({
         <FlexItem spacer={{ default: "spacerNone" }}>
           <Split hasGutter>
             <UserAltIcon className="icon-class" />
-            <SplitItem>Contributors:</SplitItem>
+            <SplitItem className="fontCategory">Contributors:</SplitItem>
             <SplitItem>
               <Title className="font" headingLevel="h6" size="md">
                 {Math.max(contributors, 0)}
@@ -55,7 +55,7 @@ const GithubStats = ({
         <FlexItem spacer={{ default: "spacerNone" }}>
           <Split hasGutter>
             <CodeIcon className="icon-class" />
-            <SplitItem>DependentRepos:</SplitItem>
+            <SplitItem className="fontCategory">DependentRepos:</SplitItem>
             <SplitItem>
               <Title className="font" headingLevel="h6" size="md">
                 {Math.max(dependentRepos, 0)}
@@ -66,7 +66,7 @@ const GithubStats = ({
         <FlexItem spacer={{ default: "spacerNone" }}>
           <Split hasGutter>
             <GithubIcon className="icon-class" />
-            <SplitItem>Usage:</SplitItem>
+            <SplitItem className="fontCategory">Usage:</SplitItem>
             <SplitItem>
               <Title className="font" headingLevel="h6" size="md">
                 {Math.max(usage, 0)}
@@ -77,7 +77,7 @@ const GithubStats = ({
         <FlexItem spacer={{ default: "spacerNone" }}>
           <Split hasGutter>
             <CodeBranchIcon className="icon-class" />
-            <SplitItem>Forks:</SplitItem>
+            <SplitItem className="fontCategory">Forks:</SplitItem>
             <SplitItem>
               <Title className="font" headingLevel="h6" size="md">
                 {Math.max(forks, 0)}
