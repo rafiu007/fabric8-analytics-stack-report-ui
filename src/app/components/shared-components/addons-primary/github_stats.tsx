@@ -43,7 +43,7 @@ const GithubStats = ({
         <span> </span>
         <FlexItem spacer={{ default: "spacerNone" }}>
           <Split hasGutter>
-            <UserAltIcon className="icon-class" />
+            <UserAltIcon className="iconColour" />
             <SplitItem className="fontCategory">Contributors:</SplitItem>
             <SplitItem>
               <Title className="font" headingLevel="h6" size="md">
@@ -54,7 +54,7 @@ const GithubStats = ({
         </FlexItem>
         <FlexItem spacer={{ default: "spacerNone" }}>
           <Split hasGutter>
-            <CodeIcon className="icon-class" />
+            <CodeIcon className="iconColour" />
             <SplitItem className="fontCategory">DependentRepos:</SplitItem>
             <SplitItem>
               <Title className="font" headingLevel="h6" size="md">
@@ -65,7 +65,7 @@ const GithubStats = ({
         </FlexItem>
         <FlexItem spacer={{ default: "spacerNone" }}>
           <Split hasGutter>
-            <GithubIcon className="icon-class" />
+            <GithubIcon className="iconColour" />
             <SplitItem className="fontCategory">Usage:</SplitItem>
             <SplitItem>
               <Title className="font" headingLevel="h6" size="md">
@@ -76,7 +76,7 @@ const GithubStats = ({
         </FlexItem>
         <FlexItem spacer={{ default: "spacerNone" }}>
           <Split hasGutter>
-            <CodeBranchIcon className="icon-class" />
+            <CodeBranchIcon className="iconColour" />
             <SplitItem className="fontCategory">Forks:</SplitItem>
             <SplitItem>
               <Title className="font" headingLevel="h6" size="md">
@@ -87,8 +87,8 @@ const GithubStats = ({
         </FlexItem>
         <FlexItem spacer={{ default: "spacerNone" }}>
           <Split hasGutter>
-            <StarIcon className="icon-class" />
-            <SplitItem>Stars:</SplitItem>
+            <StarIcon className="iconColour" />
+            <SplitItem className="fontCategory">Stars:</SplitItem>
             <SplitItem>
               <Title className="font" headingLevel="h6" size="md">
                 {Math.max(stars, 0)}
