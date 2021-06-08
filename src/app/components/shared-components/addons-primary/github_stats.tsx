@@ -13,6 +13,7 @@ import {
   GithubIcon,
   CodeIcon,
 } from "@patternfly/react-icons";
+import "./addons.scss";
 
 type GithubStatsProps = {
   contributors: number;
@@ -45,7 +46,7 @@ const GithubStats = ({
             <UserAltIcon className="icon-class" />
             <SplitItem>Contributors:</SplitItem>
             <SplitItem>
-              <Title headingLevel="h6" size="md">
+              <Title className="font" headingLevel="h6" size="md">
                 {Math.max(contributors, 0)}
               </Title>
             </SplitItem>
@@ -56,7 +57,7 @@ const GithubStats = ({
             <CodeIcon className="icon-class" />
             <SplitItem>DependentRepos:</SplitItem>
             <SplitItem>
-              <Title headingLevel="h6" size="md">
+              <Title className="font" headingLevel="h6" size="md">
                 {Math.max(dependentRepos, 0)}
               </Title>
             </SplitItem>
@@ -67,7 +68,7 @@ const GithubStats = ({
             <GithubIcon className="icon-class" />
             <SplitItem>Usage:</SplitItem>
             <SplitItem>
-              <Title headingLevel="h6" size="md">
+              <Title className="font" headingLevel="h6" size="md">
                 {Math.max(usage, 0)}
               </Title>
             </SplitItem>
@@ -78,7 +79,7 @@ const GithubStats = ({
             <CodeBranchIcon className="icon-class" />
             <SplitItem>Forks:</SplitItem>
             <SplitItem>
-              <Title headingLevel="h6" size="md">
+              <Title className="font" headingLevel="h6" size="md">
                 {Math.max(forks, 0)}
               </Title>
             </SplitItem>
@@ -89,7 +90,7 @@ const GithubStats = ({
             <StarIcon className="icon-class" />
             <SplitItem>Stars:</SplitItem>
             <SplitItem>
-              <Title headingLevel="h6" size="md">
+              <Title className="font" headingLevel="h6" size="md">
                 {Math.max(stars, 0)}
               </Title>
             </SplitItem>
